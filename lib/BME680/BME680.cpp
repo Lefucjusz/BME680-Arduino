@@ -203,7 +203,7 @@ void BME680::updateSubscription()
         BSEC_OUTPUT_GAS_PERCENTAGE
     };
 
-    sensor.updateSubscription(sensorsList, ARRAY_SIZE(sensorsList), BSEC_SAMPLE_RATE_LP);
+    sensor.updateSubscription(sensorsList, ARRAY_SIZE(sensorsList), BSEC_SAMPLE_RATE_ULP);
 }
 
 uint8_t BME680::computeStateChecksum(const uint8_t *state)
